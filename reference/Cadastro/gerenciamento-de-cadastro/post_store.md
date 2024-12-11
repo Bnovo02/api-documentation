@@ -17,4 +17,4 @@ next:
 
 **IMPORTANTE**
 
-- Para realizar o cadastro de uma loja na Shipay é necessário ter previamente cadastrado um customer.
+* Para realizar o cadastro de uma loja na Shipay é necessário ter previamente cadastrado um customer.
