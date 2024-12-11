@@ -3,3 +3,4 @@
 - get_orderv-order-id
 - get_orders-list-3
 - delete_order-order-id-refund
+- patch_v1-bacen-order-due-date-order-id
