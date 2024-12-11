@@ -17,4 +17,4 @@ next:
 
 **IMPORTANTE**
 
-- Para realizar o cadastro de um novo caixa na Shipay é necessário ter previamente  realizado o cadastro de um customer e o **[cadastro de uma nova loja](https://shipay.readme.io/reference/post_store)**.
+* Para realizar o cadastro de um novo caixa na Shipay é necessário ter previamente  realizado o cadastro de um customer e o **[cadastro de uma nova loja](https://shipay.readme.io/reference/post_store)**.
