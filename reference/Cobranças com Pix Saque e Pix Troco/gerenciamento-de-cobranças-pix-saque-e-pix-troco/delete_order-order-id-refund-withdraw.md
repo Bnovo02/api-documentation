@@ -19,6 +19,6 @@ next:
 
 **Casos de uso:**
 
-- Valor de saque solicitado maior que o valor disponível no ponto de venda no momento da transação.
-- Cliente não aceitar a cédula por estar danificada ou manchada.
-- Desistência de saque ou valor solicitado incorretamente.
+* Valor de saque solicitado maior que o valor disponível no ponto de venda no momento da transação.
+* Cliente não aceitar a cédula por estar danificada ou manchada.
+* Desistência de saque ou valor solicitado incorretamente.
