@@ -17,6 +17,6 @@ next:
 
 **Atualmente, este serviço está disponível na Shipay com o seguinte banco parceiro:**
 
-- Tivit (Tbanks)
+* Tivit (Tbanks)
 
-**Pode ser utilizado para realizar a consulta de saldo da conta do usuário, antes de realizar uma [Solicitação de Criação de Pagamento](https://shipay-documentation.readme.io/reference/post_v1-payment) .**
+**Pode ser utilizado para realizar a consulta de saldo da conta do usuário, antes de realizar uma[Solicitação de Criação de Pagamento](https://shipay-documentation.readme.io/reference/post_v1-payment) .**
