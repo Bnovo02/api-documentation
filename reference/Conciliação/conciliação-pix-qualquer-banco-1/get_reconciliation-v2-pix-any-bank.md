@@ -17,6 +17,6 @@ next:
 
 **Atualmente, este serviço está disponível na Shipay com os seguintes bancos parceiros:**
 
-- Tbanks (Conta transitória Tivit)
-- Picpay (Conta transitória Picpay)
-- Qr Multiibancos (Conta transitória Itaú)
+* Tbanks (Conta transitória Tivit)
+* Picpay (Conta transitória Picpay)
+* Qr Multiibancos (Conta transitória Itaú)
