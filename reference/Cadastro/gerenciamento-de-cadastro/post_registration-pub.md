@@ -17,4 +17,4 @@ next:
 
 **IMPORTANTE:**
 
-- Antes de realizar o cadastro via API **é obrigatório ler e aceitar os [Termos de Adesão da Shipay.](https://shipay.readme.io/reference/get_contract-version)**
+* Antes de realizar o cadastro via API **é obrigatório ler e aceitar os[Termos de Adesão da Shipay.](https://shipay.readme.io/reference/get_contract-version)**
