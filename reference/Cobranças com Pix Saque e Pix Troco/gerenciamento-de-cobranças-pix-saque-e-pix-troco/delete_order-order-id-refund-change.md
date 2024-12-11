@@ -19,4 +19,4 @@ next:
 
 **IMPORTANTE**
 
-- Esse serviço realizará a devolução somente do valor de troco, portanto para devolução dos demais itens utilizar a **[devolução de produtos ou serviços](https://shipay.readme.io/reference/delete_order-order-id-refund-3)**
+* Esse serviço realizará a devolução somente do valor de troco, portanto para devolução dos demais itens utilizar a **[devolução de produtos ou serviços](https://shipay.readme.io/reference/delete_order-order-id-refund-3)**
