@@ -17,4 +17,4 @@ next:
 
 **IMPORTANTE**
 
-- Caso queira obter informações de um único lote, deve ser utilizado o serviço de [consulta de lote específico.](https://shipay.readme.io/reference/get_v2-order-due-date-batch-batch-id)
+* Caso queira obter informações de um único lote, deve ser utilizado o serviço de [consulta de lote específico.](https://shipay.readme.io/reference/get_v2-order-due-date-batch-batch-id)
