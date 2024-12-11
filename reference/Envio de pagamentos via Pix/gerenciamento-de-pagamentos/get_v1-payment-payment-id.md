@@ -17,4 +17,4 @@ next:
 
 **IMPORTANTE:**
 
-- Para garantir que obtenham o status atualizado, as consultas devem ser feitas com **intervalo mínimo de 3 segundos** entre uma e outra consulta.
+* Para garantir que obtenham o status atualizado, as consultas devem ser feitas com **intervalo mínimo de 3 segundos** entre uma e outra consulta.
