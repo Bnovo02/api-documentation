@@ -17,6 +17,6 @@ next:
 
 **IMPORTANTE:** 
 
-- **Solicitar o cancelamento para uma cobrança aprovada, resultará no estorno da mesma.**
-- Estornos realizados pelo serviço de cancelamento não serão aceitos na homologação, caso seja necessário estornar o valor, deve ser utilizado o serviço, [Estorno de cobranças](https://shipay-documentation.readme.io/reference/delete_order-order-id-refund-1).
-- Todos os status apresentados devem ser tratados de acordo com os nossos **[Fluxos de Cancelamento](https://docs.shipay.com.br/flows-cancellation-reversal).**
+* **Solicitar o cancelamento para uma cobrança aprovada, resultará no estorno da mesma.**
+* Estornos realizados pelo serviço de cancelamento não serão aceitos na homologação, caso seja necessário estornar o valor, deve ser utilizado o serviço, [Estorno de cobranças](https://shipay-documentation.readme.io/reference/delete_order-order-id-refund-1).
+* Todos os status apresentados devem ser tratados de acordo com os nossos **[Fluxos de Cancelamento](https://docs.shipay.com.br/flows-cancellation-reversal).**
