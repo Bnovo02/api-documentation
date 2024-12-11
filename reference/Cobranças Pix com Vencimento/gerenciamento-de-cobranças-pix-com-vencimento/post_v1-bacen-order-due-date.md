@@ -15,15 +15,15 @@ next:
 ---
 **Este serviço cria cobranças Pix com vencimento, permitindo:**
 
-- Estipular prazo para pagamento após o vencimento
-- Aplicar juros
-- Aplicar multa
-- Gerar descontos
-- Gerar abatimento de valores
+* Estipular prazo para pagamento após o vencimento
+* Aplicar juros
+* Aplicar multa
+* Gerar descontos
+* Gerar abatimento de valores
 
 **Atualmente, este serviço está disponível na Shipay  com os seguintes bancos parceiros:**
 
-- Itaú
-- Bradesco
-- Tbanks
-- Sicredi
+* Itaú
+* Bradesco
+* Tbanks
+* Sicredi
