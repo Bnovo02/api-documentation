@@ -1,3 +1,4 @@
 - post_v1-locations
 - get_v1-locations
 - get_v1-locations-location-id
+- patch_v1-locations-location-id
