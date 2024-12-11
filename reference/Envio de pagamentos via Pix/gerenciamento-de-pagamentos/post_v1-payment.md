@@ -17,18 +17,18 @@ next:
 
 **É possível utilizar os seguintes dados para realizar transferências:**
 
-- Chave Pix;
-- Dados bancários.
+* Chave Pix;
+* Dados bancários.
 
 **Atualmente, este serviço está disponível na Shipay com os seguintes bancos parceiros:**
 
-- Tivit (Tbanks)
-- Bs2
-- Itaú
-- Santander
+* Tivit (Tbanks)
+* Bs2
+* Itaú
+* Santander
 
 **IMPORTANTE:** 
 
-- No momento a criação de solicitação de pagamentos Pix via dados bancários,** está disponível somente para o banco Itaú.**
-- Para acessar esse serviço, além da** [autenticação](https://shipay.readme.io/reference/post_pdvauth-2)**, é necessário configurar o certificado MTLS.  
+* No momento a criação de solicitação de pagamentos Pix via dados bancários, **está disponível somente para o banco Itaú.**
+* Para acessar esse serviço, além da **[autenticação](https://shipay.readme.io/reference/post_pdvauth-2)**, é necessário configurar o certificado MTLS.\
   Para mais informações, acessar o **[passo a passo para criação do certificado MTLS.](https://docs.shipay.com.br/setupcashout.html)**
