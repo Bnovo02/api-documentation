@@ -1,0 +1,8 @@
+- getcontractversion
+- getgeocitiesuf
+- getgeoufs
+- postregistrationpub
+- poststore
+- poststorepos
+- getstores
+- getstoreposperstoreidstoreuuid
