@@ -21,5 +21,5 @@ next:
 
 **IMPORTANTE:** 
 
-- **Após a expiração da cobrança, não será possível realizar o pagamento da mesma.**
-- **Caso seja necessário criar cobranças com tempo de expiração menor, é necessário utilizar o serviço de [criação de pagamentos imediatos](https://shipay-documentation.readme.io/reference/post_order) **
+* **Após a expiração da cobrança, não será possível realizar o pagamento da mesma.**
+* **Caso seja necessário criar cobranças com tempo de expiração menor, é necessário utilizar o serviço de[criação de pagamentos imediatos](https://shipay-documentation.readme.io/reference/post_order)**
