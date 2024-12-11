@@ -17,11 +17,11 @@ next:
 
 **Para gerar este token de acesso, é necessário o envio das seguintes credenciais na requisição:**
 
-- access_key
-- pos_product_id
+* access\_key
+* pos\_product\_id
 
-**Para obter essas credenciais, favor solicitar para nossa equipe de integração ([integracao@shipay.com.br](<>)).**
+**Para obter essas credenciais, favor solicitar para nossa equipe de integração ([integracao@shipay.com.br]()).**
 
 **IMPORTANTE:**
 
-- O prazo de validade do token de acesso é informado na resposta desta API e **o mesmo token deve ser utilizado nas requisições enquanto estiver válido.**
+* O prazo de validade do token de acesso é informado na resposta desta API e **o mesmo token deve ser utilizado nas requisições enquanto estiver válido.**
