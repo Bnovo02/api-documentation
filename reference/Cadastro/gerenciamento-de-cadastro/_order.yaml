@@ -5,3 +5,4 @@
 - post_store
 - post_store-pos
 - get_stores
+- get_store-pos-per-store-id-store-uuid
