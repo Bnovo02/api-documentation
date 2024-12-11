@@ -17,5 +17,5 @@ next:
 
 **IMPORTANTE:**
 
-- Para garantir que obtenham o status atualizado, as janelas de consulta devem ocorrer com um **intervalo mínimo de 1 minuto.**
-- O intervalo de consulta utilizando os filtros de data **não pode ultrapassar 24 horas.**
+* Para garantir que obtenham o status atualizado, as janelas de consulta devem ocorrer com um **intervalo mínimo de 1 minuto.**
+* O intervalo de consulta utilizando os filtros de data **não pode ultrapassar 24 horas.**
