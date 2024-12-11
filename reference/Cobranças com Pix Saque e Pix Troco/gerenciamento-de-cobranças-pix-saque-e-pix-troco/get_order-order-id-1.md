@@ -17,4 +17,4 @@ next:
 
 **IMPORTANTE:**
 
-- Para garantir que obtenham o status atualizado, as janelas de consulta devem ocorrer com um **intervalo mínimo de 3 segundos.**
+* Para garantir que obtenham o status atualizado, as janelas de consulta devem ocorrer com um **intervalo mínimo de 3 segundos.**
