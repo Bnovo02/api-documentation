@@ -17,4 +17,4 @@ next:
 
 **Atualmente, este serviço está disponível na Shipay com o seguinte banco parceiro:**
 
-- Tivit(Tbanks)
+* Tivit(Tbanks)
