@@ -17,20 +17,20 @@ next:
 
 **Suporta os seguintes tipos de cobranças:**
 
-- Pix
-- Carteiras Digitais
-- Criptomoedas
+* Pix
+* Carteiras Digitais
+* Criptomoedas
 
 [Verificar bancos parceiros disponíveis](https://shipay.freshdesk.com/support/solutions/articles/154000127015-shipay-quais-s%C3%A3o-os-psps-em-produc%C3%A3o-)
 
 **Recomendado para:**
 
-- Sistemas de frente de caixa
-- Checkouts de e-commerce
-- Devices mobile de frente de caixa
-- Chatbot
-- Aplicativos
-- Maquininhas (POS e SmartPOS)
+* Sistemas de frente de caixa
+* Checkouts de e-commerce
+* Devices mobile de frente de caixa
+* Chatbot
+* Aplicativos
+* Maquininhas (POS e SmartPOS)
 
 **IMPORTANTE**
 
