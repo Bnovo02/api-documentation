@@ -1,3 +1,4 @@
 - get_contract-version
 - get_geo-cities-uf
 - get_geo-ufs
+- post_registration-pub
