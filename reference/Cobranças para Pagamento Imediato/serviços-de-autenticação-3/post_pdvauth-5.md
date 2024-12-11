@@ -20,7 +20,6 @@ next:
 * access\_key
 * secret\_key
 * client\_id
-* teste\_id
 
 **Saiba como obter suas credenciais para API:[Criação de Credenciais](https://docs.shipay.com.br/cadastro.html)**
 
