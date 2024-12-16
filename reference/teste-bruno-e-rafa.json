@@ -1,0 +1,204 @@
+{
+    "openapi": "3.1.0",
+    "info": {
+      "title": "Boleto Híbrido",
+      "version": "1.0.0",
+      "description": ""
+    },
+    "servers": [
+      {
+        "url": "https://api-staging.shipay.com.br",
+        "description": "Ambiente de staging da API Shipay"
+      }
+    ],
+    "paths": {
+      "/pdvauth": {
+        "post": {
+          "tags": [
+            "Serviços de autenticação"
+          ],
+          "summary": "Autenticação para acesso aos serviços transacionais",
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "access_key": {
+                      "type": "string",
+                      "description": "Access Key do Cliente.",
+                      "example": "DFt7Oqzn_LGyYnDGLwX7oA"
+                    },
+                    "secret_key": {
+                      "type": "string",
+                      "description": "Secret Key do Cliente.",
+                      "example": "dNiIFM34DSvKIAubw9nfJL7qrFWFoYKLSeHTPVOyNcEBw-7oTROVK3mq5mbzR_h_emcxZAaWyjmFsd7TVdeBmZ"
+                    },
+                    "client_id": {
+                      "type": "string",
+                      "description": "Client ID do Caixa.",
+                      "example": "GilnDDsTSTP73uVXm1C_A8ANAGTkoLler3MgpxPi04Z5mfc18cSG93-9PTlhN8nqKXfQOJ4rEOvDGcjT81Nwu_b6jPbYG3cZZ3YO5ZgqflA9AmRZzUv1TBDSP0sxYzplJvHmIlUw"
+                    }
+                  },
+                  "required": [
+                    "access_key",
+                    "secret_key",
+                    "client_id"
+                  ]
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "PDV Authenticated.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "access_token": {
+                        "type": "string",
+                        "description": "Token de acesso do sistema autenticado.",
+                        "example": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY4NTUwMTAsIm5iZiI6MTcyNjg1NTAxMCwianRpIjoiMjUyY2I1YjEtZGFiZC00MmFlLThkZDAtZmMxNDFiYzAxNzg4IiwiZXhwIjoxNzI2ODY5NDEwLCJpZGVudGl0eSI6eyJhdXRoX3R5cGUiOiJjbGllbnQiLCJjdXN0b21lcl9pZCI6Miwic3RvcmVfcG9zX2lkIjo5MTI2fSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.wbM6iSn5RWy44av-Rzii6b6Uv5HSzXuUxx-TKC-q48Q"
+                      },
+                      "access_token_expires_in": {
+                        "type": "integer",
+                        "description": "Tempo de vida em segundos do token de acesso.",
+                        "example": "14400"
+                      },
+                      "refresh_token": {
+                        "type": "string",
+                        "description": "Token de atualização do sistema autenticado.",
+                        "example": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzA0Mjc5NDUsIm5iZiI6MTYzMDQyNzk0NSwianRpIjoiMDc1YjExOGYtZjE4Ni00MzVlLWIyMDUtNGMyNzgyZTUwNzczIiwiZXhwIjoxNjMzMDE5OTQ1LCJpZGVudGl0eSI6eyJhdXRoX3R5cGUiOiJjbGllbnQiLCJjdXN0b21lcl9pZCI6Miwic3RvcmVfcG9zX2lkIjozNTd9LCJ0eXBlIjoicmVmcmVzaCJ9.tYPOrCHLjdciDxYLwgVqt4I6tiDoAZBv4-6T5e8ocA"
+                      },
+                      "refresh_token_expires_in": {
+                        "type": "integer",
+                        "description": "Tempo de vida em segundos do token de atualização.",
+                        "example": "28800"
+                      },
+                      "token_type": {
+                        "type": "string",
+                        "description": "Tipo dos tokens.",
+                        "example": "Bearer"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthenticated Client.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "code": {
+                        "type": "integer",
+                        "description": "Código de erro.",
+                        "example": "401"
+                      },
+                      "message": {
+                        "type": "string",
+                        "description": "Mensagem de erro.",
+                        "example": "Unauthenticated User."
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/refresh-token": {
+        "post": {
+          "tags": [
+            "Serviços de autenticação"
+          ],
+          "summary": "Atualizar o Token de Acesso",
+          "requestBody": {
+            "content": {}
+          },
+          "parameters": [
+            {
+              "name": "authorization",
+              "in": "header",
+              "schema": {
+                "type": "string",
+                "description": "Referesh token obtido através do serviço de [Autenticação para acesso aos serviços transacionais](https://shipay.readme.io/reference/post_pdvauth-5)"
+              },
+              "example": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY4NTUwMTAsIm5iZiI6MTcyNjg1NTAxMCwianRpIjoiMjUyY2I1YjEtZGFiZC00MmFlLThkZDAtZmMxNDFiYzAxNzg4IiwiZXhwIjoxNzI2ODY5NDEwLCJpZGVudGl0eSI6eyJhdXRoX3R5cGUiOiJjbGllbnQiLCJjdXN0b21lcl9pZCI6Miwic3RvcmVfcG9zX2lkIjo5MTI2fSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.wbM6iSn5RWy44av-Rzii6b6Uv5HSzXuUxx-TKC-q48Q",
+              "required": true
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Token Refreshed.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "access_token": {
+                        "type": "string",
+                        "description": "Token de acesso do sistema autenticado.",
+                        "example": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjY4NTUwMTAsIm5iZiI6MTcyNjg1NTAxMCwianRpIjoiMjUyY2I1YjEtZGFiZC00MmFlLThkZDAtZmMxNDFiYzAxNzg4IiwiZXhwIjoxNzI2ODY5NDEwLCJpZGVudGl0eSI6eyJhdXRoX3R5cGUiOiJjbGllbnQiLCJjdXN0b21lcl9pZCI6Miwic3RvcmVfcG9zX2lkIjo5MTI2fSwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.wbM6iSn5RWy44av-Rzii6b6Uv5HSzXuUxx-TKC-q48Q"
+                      },
+                      "access_token_expires_in": {
+                        "type": "integer",
+                        "description": "Tempo de vida em segundos do token de acesso.",
+                        "example": "14400"
+                      },
+                      "refresh_token": {
+                        "type": "string",
+                        "description": "Token de atualização do sistema autenticado.",
+                        "example": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MzA0Mjc5NDUsIm5iZiI6MTYzMDQyNzk0NSwianRpIjoiMDc1YjExOGYtZjE4Ni00MzVlLWIyMDUtNGMyNzgyZTUwNzczIiwiZXhwIjoxNjMzMDE5OTQ1LCJpZGVudGl0eSI6eyJhdXRoX3R5cGUiOiJjbGllbnQiLCJjdXN0b21lcl9pZCI6Miwic3RvcmVfcG9zX2lkIjozNTd9LCJ0eXBlIjoicmVmcmVzaCJ9.tYPOrCHLjdciDxYLwgVqt4I6tiDoAZBv4-6T5e8ocA"
+                      },
+                      "refresh_token_expires_in": {
+                        "type": "integer",
+                        "description": "Tempo de vida em segundos do token de atualização.",
+                        "example": "28800"
+                      },
+                      "token_type": {
+                        "type": "string",
+                        "description": "Tipo do token.",
+                        "example": "Bearer"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Unauthenticated Client.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "properties": {
+                      "code": {
+                        "type": "integer",
+                        "description": "Código de erro.",
+                        "example": "401"
+                      },
+                      "message": {
+                        "type": "string",
+                        "description": "Mensagem de erro.",
+                        "example": "Unauthenticated User."
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "x-readme": {
+      "explorer-enabled": true,
+      "proxy-enabled": true
+    }
+  }
