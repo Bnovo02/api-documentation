@@ -1,0 +1,8 @@
+- get_contract-version
+- get_geo-cities-uf
+- get_geo-ufs
+- post_registration-pub
+- post_store
+- post_store-pos
+- get_stores
+- get_store-pos-per-store-id-store-uuid
